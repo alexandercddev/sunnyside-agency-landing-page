@@ -2,8 +2,7 @@
 * @author: Alexander Chi
 * @description:
 * @date: 13/Julio/2021
-**/
-https://fonts.google.com/specimen/Barlow
+**/ 
 @import url('https://fonts.googleapis.com/css?family=Barlow:600,700,800,900&display=swap');
 
 * {
@@ -13,16 +12,56 @@ https://fonts.google.com/specimen/Barlow
   font-family: 'Barlow', sans-serif;
 }
 
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+/** Header Style **/
+header { 
   display: flex;
   justify-content: space-between;
-  padding: 10px 10px;
-  z-index: 10000;
-  transition: 0.6s;
+  padding-top: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  background-repeat: no-repeat;
+  height: calc(100vh - 80px); 
+  background-size: 100%;
+  background-image: url(http://localhost:3000/img/desktop/image-header.jpg);
+  color: #FFF;
+}
+
+header> span.header__logo {
+ 
+}
+
+header> div.header__options { 
+  width: 100%;  
+}
+
+header> div.header__options ul {  
+  display: flex;
+  justify-content: flex-end;
+}
+
+header> div.header__options> ul.header__options__list li{
+  list-style-type: none; 
+  padding-left: 1em; 
+}
+
+header> div.header__options> ul.header__options__list li a{
+  text-decoration: none;
+  color: #FFF;
+}
+
+section.section__about {
+  
+}
 
 
+/** Movil **/
+@media (max-width: 375px) { 
+  /** Header Style **/
+  header {  
+    background-image: url(http://localhost:3000/img/mobile/image-header.jpg);
+  }
+
+  header> div.header__options { 
+    display: none;  
+  }
 }
