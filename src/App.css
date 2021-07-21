@@ -22,7 +22,7 @@ header {
   background-repeat: no-repeat;
   height: calc(100vh - 80px); 
   background-size: 100%;
-  background-image: url(http://localhost:3000/img/desktop/image-header.jpg);
+  background-image: url(./img/desktop/image-header.jpg);
   color: #FFF;
 }
 
@@ -58,7 +58,7 @@ section.section__about {
 @media (max-width: 375px) { 
   /** Header Style **/
   header {  
-    background-image: url(http://localhost:3000/img/mobile/image-header.jpg);
+    background-image: url(./img/mobile/image-header.jpg);
   }
 
   header> div.header__options { 
