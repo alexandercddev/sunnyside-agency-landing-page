@@ -8,11 +8,30 @@ import {Services} from '../views/components/services';
 import {Projects} from '../views/components/projects';
 import {Contact} from '../views/components/contact';
 
+export const about = [
+    {
+        className: "transform",
+        subTitle: "Transform, your brand",
+        description: "We are a full-services creative agency " +
+                    "specializing in helping brands grow fast. " +
+                    "Engage your clients through compelling visual " +
+                    "that do most of the marketing for you. "
+    },
+    {
+        className: "satnd__out",
+        subTitle: "Stand out to the righjt audience",
+        description: "Using a collaborative formula of " +
+                    "designers reesarchers, photographers, " +
+                    "videographers, and copywriters, we'll " +
+                    "build and extend your brand in digital places.", 
+    }
+];
+
 export const options = [
     {
         key: "about",
         name: "About",
-        component: <About key="about" id="about"/>,
+        component: <About key="about" id="about" about={about}/>, 
     },
     {
         key: "services",
@@ -29,6 +48,6 @@ export const options = [
         name: "Contact",
         component: <Contact key="contact" id="contact"/>,
     }, 
-];
+]; 
 
 export default options;

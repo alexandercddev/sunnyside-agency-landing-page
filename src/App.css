@@ -17,7 +17,7 @@
 header { 
   padding: 2em;
   background-repeat: no-repeat;
-  height: calc(100vh - 80px); 
+  height: calc(100vh - 100px); 
   background-size: 100%;
   background-image: url(./img/desktop/image-header.jpg);
   color: #FFF;
@@ -69,6 +69,63 @@ header> div.header__text {
   display:flex;
   justify-content: center;
   margin-top: 4em;
+}
+
+header> div.header__arrow {
+  width: 100%;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+/*transform: translate(-50%, -50%) rotate(45deg);*/
+header> div.header__arrow> div.header__arrow__line {
+  width:  2px;
+  height: 65px;
+  background: #FFF; 
+  transition: all 0.5s ease-in-out;
+  margin-bottom: -1em; 
+  margin-top: 3.5em; 
+  display: flex; 
+}
+
+header> div.header__arrow> div.header__arrow__triangule { 
+  display: flex;
+  width: 16px;
+  height: 16px;
+  border: solid #FFF;
+  border-width: 0 2px 2px 0; 
+  padding: 2px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/** ABOUT **/
+section> div.about__content {
+  margin-bottom: -3px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+section> div.about__content.about__transform {
+  display: flex;
+  flex-direction: row;
+}
+
+section> div.about__content.about__satnd__out {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+section> div.about__content> div.about__img img.transform {
+  content: url(./img/desktop/image-transform.jpg);  
+  width: 100%; 
+}
+
+section> div.about__content> div.about__img img.satnd__out {
+  content: url(./img/desktop/image-stand-out.jpg);  
+  width: 100%;
 }
 
 
@@ -137,4 +194,11 @@ header> div.header__text {
     background: #FFF;
     transition: all 0.5s ease-in-out;
   } 
+  
+  header> div.header__arrow> div.header__arrow__line { 
+    height: 100px;
+    margin-top: 9.5em;  
+  }
 }
+
+ 
