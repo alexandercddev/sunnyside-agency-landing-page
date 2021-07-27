@@ -10,11 +10,11 @@
   margin: 0;
   padding:  0;
   box-sizing: border-box;
-  font-family: 'Barlow', 'Fraunces'; 
+  font-family: 'Barlow', 'Fraunces';  
 }
 
-a, p {
-  font-size: 18px;
+a, p, span {
+  font-size: 18px; 
 }
 
 /** Header Style **/
@@ -36,6 +36,7 @@ header> div.header__content {
 header> div.header__content> span.header__logo {
   padding: 0.5em 1em 0.5em 1em;
   cursor: pointer;
+  content: url('img/svg/logo.svg');
 }
 
 header> div.header__content> div.header__options { 
@@ -104,11 +105,12 @@ header> div.header__arrow> div.header__arrow__triangule {
   -webkit-transform: rotate(45deg);
 }
 
-/** ABOUT **/
+/** About **/
 section> div.about__content { 
   padding: 0;
   display: flex;
   align-items: center; 
+  color: hsl(210, 4%, 67%);
 }
 
 
@@ -119,6 +121,7 @@ section> div.about__content> div.about__text {
 section> div.about__content> div.about__text> h2 {
   font-size: 35px;
   margin-bottom: 1em;   
+  color: #000;
 }
 
 section> div.about__content> div.about__text> p { 
@@ -150,30 +153,38 @@ section> div.about__content> div.about__img img.satnd__out {
   width: 100%;
 }
 
-/** About Footer **/
-.about__footer__content {
+/** Services **/
+.services__content {
   display: flex; 
   flex-direction: row;
   margin-top: -3px;
 }
 
-.about__footer__img {
+.services__img {
   display: flex;
   flex-direction: column;
   width: 50%
 }
 
-div.about__footer__content> div.about__footer__graphic> img.graphic {
+div.services__content> div.services__graphic> img.graphic {
   content: url(./img/desktop/image-graphic-design.jpg);
   width: 100%;
 }
 
-div.about__footer__content> div.about__footer__photography> img.photography {
+div.services__content> div.services__photography> img.photography {
   content: url(./img/desktop/image-photography.jpg);
   width: 100%;
 }
 
-.about__footer__img_content {
+div.services__content> div.services__graphic> div.services__img_content{
+  color: hsl(167, 40%, 24%);
+}
+
+div.services__content> div.services__photography> div.services__img_content{
+  color: hsl(198, 62%, 26%);
+}
+
+.services__img_content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -182,13 +193,152 @@ div.about__footer__content> div.about__footer__photography> img.photography {
   margin-top: -7.5em;
 }
 
-.about__footer__img_content> h2 { 
+.services__img_content> h2 { 
   margin-bottom: 0.5em;
 }
 
-.about__footer__img_content> p { 
+.services__img_content> p { 
   text-align:center;
 }
+
+/** Projects **/
+section.section__projects {
+  margin-top: 2em;
+}
+
+section.section__projects> h2 {
+  text-align: center;
+  margin-top: 5em;
+  margin-bottom: 3em;
+  text-transform: uppercase;
+  color: hsl(210, 4%, 67%);
+}
+
+.projects__container {
+  display: flex;
+  flex-direction: row;
+}
+
+.projects__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  
+}
+
+div.projects__content> img, 
+div.projects__content> p {
+  color: hsl(210, 4%, 67%);
+  margin-bottom: 1.5em;
+}
+
+div.projects__content> span{
+  color: hsl(210, 4%, 67%);
+}
+
+img.projects__img {
+  border-radius: 50%;
+  width: 75px; 
+}
+
+.projects__markenting__director {
+  content: url('img/fotos/image-emily.jpg');
+}
+
+.projects__cheif__operating {
+  content: url('img/fotos/image-thomas.jpg');
+}
+
+.projects__busines__owner {
+  content: url('img/fotos/image-jennie.jpg');
+}
+
+.services__p {
+  text-align: center;
+}
+
+/** Contact **/
+.contact__imgs{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.contact__imgs> div.contact__content> img.contact__milk{
+  content: url("./img/desktop/image-gallery-milkbottles.jpg");
+  width: 100%;
+}
+
+.contact__imgs> div.contact__content> img.contact__orange{
+  content: url("./img/desktop/image-gallery-orange.jpg");
+  width: 100%;
+}
+
+.contact__imgs> div.contact__content> img.contact__cone{
+  content: url("./img/desktop/image-gallery-cone.jpg");
+  width: 100%;
+}
+
+.contact__imgs> div.contact__content> img.contact__sugar{
+  content: url("./img/desktop/image-gallery-sugarcubes.jpg");
+  width: 100%;
+}
+
+.contact__footer {
+   background-color: hsl(168, 34%, 41%);
+   color: hsl(167, 40%, 24%);
+   padding-bottom: 2em;
+   margin-top: -3px;
+}
+
+.contact__footer h3 {
+  display: flex;
+  justify-content: center;
+  padding: 2.5em 1em 0.5em 1em;
+  font-size: 30px;
+  /*content: url('img/svg/logo.svg');*/ 
+}
+
+.contact__options__list,
+.contact__social__list { 
+  width: 100%;  
+  display: flex;
+  justify-content: center;
+} 
+   
+ul.contact__options__list li {
+  list-style-type: none; 
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+ul.contact__options__list li a{
+  width: 100%;
+  text-decoration: none;
+  color: hsl(167, 40%, 24%);
+}
+ 
+ul.contact__social__list li{
+  list-style-type: none; 
+  padding: 0.3em;
+}
+
+ul.contact__social__list li> a> img.facebook {
+  content: url('img/svg/icon-facebook.svg');
+}
+
+ul.contact__social__list li> a> img.instagram {
+  content: url('img/svg/icon-instagram.svg');
+}
+
+ul.contact__social__list li> a> img.twitter {
+  content: url('img/svg/icon-twitter.svg');
+}
+
+ul.contact__social__list li> a> img.pinterest {
+  content: url('img/svg/icon-pinterest.svg');
+}
+ 
 
 /** Movil **/
 @media (max-width: 375px) { 
@@ -273,32 +423,72 @@ div.about__footer__content> div.about__footer__photography> img.photography {
     flex-direction: column-reverse; 
   }
 
-  .about__footer__content { 
+  .services__content { 
     flex-direction: column; 
   }
-  .about__footer__img {
+  .services__img {
     width: 100%;
   }
-
   
-  div.about__footer__content> div.about__footer__graphic> img.graphic {
+  div.services__content> div.services__graphic> img.graphic {
     content: url(./img/mobile/image-graphic-design.jpg);
     width: 100%;
   }
 
-  div.about__footer__content> div.about__footer__photography> img.photography {
+  div.services__content> div.services__photography> img.photography {
     content: url(./img/mobile/image-photography.jpg);
     width: 100%;
   }
 
-  .about__footer__img_content {
+  .services__img_content {
     margin-top: -9.1em;
     padding-bottom: 1em;
     padding-left: 1em;
     padding-right: 1em;
   }
+
+  /** Proyects **/
+  .projects__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /** Contact **/
+  .contact__imgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .contact__imgs> div.contact__content {
+    width: 50%;
+    margin-bottom: -3px;
+  }
+
+  .contact__imgs> div.contact__content> img.contact__milk{
+    content: url("./img/mobile/image-gallery-milkbottles.jpg"); 
+  }
+  
+  .contact__imgs> div.contact__content> img.contact__orange{
+    content: url("./img/mobile/image-gallery-orange.jpg"); 
+  }
+  
+  .contact__imgs> div.contact__content> img.contact__cone{
+    content: url("./img/mobile/image-gallery-cone.jpg"); 
+  }
+  
+  .contact__imgs> div.contact__content> img.contact__sugar{
+    content: url("./img/mobile/image-gallery-sugar-cubes.jpg"); 
+  }
+
+  .contact__footer { 
+    margin-top: 0;
+ }
 }
 
+/** Desktop **/
 @media (min-width: 1440px) { 
    /** Header Style **/
   header {  

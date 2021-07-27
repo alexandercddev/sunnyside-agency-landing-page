@@ -12,7 +12,6 @@ export function SunnySide (props) {
         <header className="header" > 
             <div className="header__content">
                 <span className="header__logo">
-                    Sunnyside
                 </span>
                 <div className="header__options">
                     <ul className="header__options__list">

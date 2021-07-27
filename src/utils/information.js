@@ -26,8 +26,11 @@ export const about = {
                         "videographers, and copywriters, we'll " +
                         "build and extend your brand in digital places.", 
         }
-    ],
-    footer: [
+    ]
+}
+
+export const services = {
+    main: [
         {
             className: "graphic",
             subTitle: "Graphic Design",
@@ -39,7 +42,68 @@ export const about = {
             description: "Increase your credibility by getting the most stunning, high-quality photos that improve your business image.", 
         }
     ]
-};
+}
+
+export const projects = {
+    title: 'Client testimonials',
+    main: [
+        {
+            key: 'markenting__director',
+            description: 'We put our trust in Sunnyside and they delivered, marking sure our needs were met and deadlines were always hit',
+            name: 'Emily R.',
+            lastName: 'Markenting Director'
+        },
+        {
+            key: 'cheif__operating',
+            description: 'Sunnyside´s enthusiasm with their keen interest in our brand´s success made it a satisfying and enjoyable experience.',
+            name: 'Thomas S.',
+            lastName: 'Cheif Operating Officer'
+        },
+        {
+            key: 'busines__owner',
+            description: 'Incredible end result! OPur sakes increased over 400% when we  worked with Sunnyside. Highly recommended!',
+            name: 'Jennie F.',
+            lastName: 'Busines Owner'
+        }
+    ]
+}
+
+export const contact = {
+    image: [ 'milk', 'orange', 'cone', 'sugar'],
+    page: 'sunnyside',
+    section: [
+        {
+            key: 'about',
+            name: 'About'
+        },
+        {
+            key: 'services',
+            name: 'Services'
+        },
+        {
+            key: 'projects',
+            name: 'Projects'
+        },
+    ],
+    social:[
+        {
+            key: 'facebook', 
+            url: '#',
+        },
+        {
+            key: 'instagram', 
+            url: '#',
+        },
+        {
+            key: 'twitter', 
+            url: '#',
+        },
+        {
+            key: 'pinterest', 
+            url: '#',
+        },
+    ],
+}
 
 export const options = [
     {
@@ -50,17 +114,17 @@ export const options = [
     {
         key: "services",
         name: "Services",
-        component: <Services key="services" id="services"/>,
+        component: <Services key="services" id="services" services={services}/>,
     },
     {
         key: "projects",
         name: "Projects",
-        component: <Projects key="projects" id="projects"/>,
+        component: <Projects key="projects" id="projects" projects={projects}/>,
     },
     {
         key: "contact",
         name: "Contact",
-        component: <Contact key="contact" id="contact"/>,
+        component: <Contact key="contact" id="contact" contact={contact}/>,
     }, 
 ]; 
 
