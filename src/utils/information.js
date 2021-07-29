@@ -12,7 +12,7 @@ export const about = {
     main: [
         {
             className: "transform",
-            subTitle: "Transform, your brand",
+            subTitle: "Transform your brand",
             description: "We are a full-services creative agency " +
                         "specializing in helping brands grow fast. " +
                         "Engage your clients through compelling visual " +

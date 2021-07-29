@@ -37,7 +37,7 @@ export function Contact (props) {
                 <ul className="contact__social__list">
                     {contact.social.map((item, index) => {
                         return (<li key={item.key}>
-                            <a>
+                            <a href={item.url}>
                                 <img className={item.key}></img>
                             </a>
                         </li>)

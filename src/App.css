@@ -70,6 +70,10 @@ header> div.header__content> div.header__options> ul.header__options__list li:ho
   color: #000;
 }
 
+.header__options__mobile {
+  display: none;
+}
+
 header> div.header__text {
   display:flex;
   justify-content: center;
@@ -127,6 +131,35 @@ section> div.about__content> div.about__text> h2 {
 section> div.about__content> div.about__text> p { 
   margin-bottom: 2em;   
 }
+
+.about__learn__more {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;  
+  position: static;
+}
+
+div.about__content> div.about__text> a.about__learn__more::after {
+  content: ' ';
+  width: 87px;
+  height: 7px;
+  border-radius: 3px;
+  background: #FFF;
+  transition: all 0.5s ease-in-out;
+  margin-top: -0.3em;
+  margin-left: -0.15em;
+  display: flex; 
+  opacity: 0.3;
+}
+
+div.about__transform> div.about__text> a.about__learn__more::after {
+  background-color: hsl(51, 100%, 49%);
+}
+
+div.about__satnd__out> div.about__text> a.about__learn__more::after {
+  background-color: hsl(7, 99%, 70%);
+} 
 
 section> div.about__content> div.about__text,
 section> div.about__content> div.about__img { 
@@ -350,7 +383,54 @@ ul.contact__social__list li> a> img.pinterest {
   }
 
   header> div.header__content> div.header__options { 
-    display: none;  
+    display: none;
+  }
+
+  .header__triagule__mobile {  
+    margin-left: auto; 
+    margin-right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 30px 30px;
+    border-color: transparent transparent #FFF transparent
+  }
+  
+  .header__options__mobile.active {
+    display: inline;
+    background-color: #FFF;
+    text-align: center;
+  }
+
+  .header__options__list__mobile {
+     
+    background-color: #FFF; 
+    padding: 2em 2em 1em 2em;
+  }
+
+  ul.header__options__list__mobile li a{
+     
+    text-decoration: none;
+    color: hsl(210, 4%, 67%);  
+  }
+  
+  ul.header__options__list__mobile li{
+    padding-bottom: 1em;
+  }
+
+  ul.header__options__list__mobile li> a:hover{
+    width: 5rem;
+    background-color: hsl(51, 100%, 49%);
+    border-radius: 30px;
+    color: #FFF; 
+    text-decoration: none;   
+    cursor: pointer;
+    padding: 0.7em 2em;
+  }
+
+  .header__text.active, 
+  .header__arrow.active {
+    display: none;
   }
 
   header> div.header__content> span.header__logo { 
@@ -413,6 +493,14 @@ ul.contact__social__list li> a> img.pinterest {
   section> div.about__content> div.about__text,
   section> div.about__content> div.about__img { 
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section> div.about__content> div.about__text> h2,
+  section> div.about__content> div.about__text> p {
+    text-align: center;
   }
 
   section> div.about__content { 
@@ -426,6 +514,7 @@ ul.contact__social__list li> a> img.pinterest {
   .services__content { 
     flex-direction: column; 
   }
+  
   .services__img {
     width: 100%;
   }

@@ -21,7 +21,7 @@ export function About (props) {
                     <div className="about__text">
                         <h2 className="about__sub__title">{item.subTitle}</h2>
                         <p className="about__p">{item.description}</p>
-                        <a href="#" className="about__learn__more">Learn more</a>
+                        <a href="#" className="about__learn__more">Learn more</a> 
                     </div>
                     <div className="about__img">
                         <img className={item.className}></img>
