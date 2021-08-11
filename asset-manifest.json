@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/sunnyside-agency-landing-page/static/css/main.d04d14b9.chunk.css",
+    "main.js": "/sunnyside-agency-landing-page/static/js/main.ec6dfa55.chunk.js",
+    "main.js.map": "/sunnyside-agency-landing-page/static/js/main.ec6dfa55.chunk.js.map",
+    "runtime-main.js": "/sunnyside-agency-landing-page/static/js/runtime-main.190b82d1.js",
+    "runtime-main.js.map": "/sunnyside-agency-landing-page/static/js/runtime-main.190b82d1.js.map",
+    "static/js/2.35b8e164.chunk.js": "/sunnyside-agency-landing-page/static/js/2.35b8e164.chunk.js",
+    "static/js/2.35b8e164.chunk.js.map": "/sunnyside-agency-landing-page/static/js/2.35b8e164.chunk.js.map",
+    "static/js/3.cc21d413.chunk.js": "/sunnyside-agency-landing-page/static/js/3.cc21d413.chunk.js",
+    "static/js/3.cc21d413.chunk.js.map": "/sunnyside-agency-landing-page/static/js/3.cc21d413.chunk.js.map",
+    "index.html": "/sunnyside-agency-landing-page/index.html",
+    "static/css/main.d04d14b9.chunk.css.map": "/sunnyside-agency-landing-page/static/css/main.d04d14b9.chunk.css.map",
+    "static/js/2.35b8e164.chunk.js.LICENSE.txt": "/sunnyside-agency-landing-page/static/js/2.35b8e164.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/sunnyside-agency-landing-page/static/media/logo.4271b899.svg",
+    "static/media/logo.6ce24c58.svg": "/sunnyside-agency-landing-page/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.190b82d1.js",
+    "static/js/2.35b8e164.chunk.js",
+    "static/css/main.d04d14b9.chunk.css",
+    "static/js/main.ec6dfa55.chunk.js"
+  ]
+}
