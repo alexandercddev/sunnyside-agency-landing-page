@@ -56,6 +56,10 @@ export function SunnySide (props) {
         {options.map((item, index) => {
             return item.component
         })}
+        <div class="attribution">
+            <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</span> 
+            <span>Coded by <a href="#">Alexander Chi</a>.</span>
+        </div>
     </div>);
 }
 
